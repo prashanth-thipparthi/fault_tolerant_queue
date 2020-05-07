@@ -2,6 +2,8 @@
 
 Implemenation of faul tolerant and distributed queue with using sequencer based protocol.
 
+Detailed write up [link](https://github.com/prashanth-thipparthi/fault_tolerant_queue/blob/master/ProgrammingAssignment2.pdf "Title").
+
 # Compiling code
 mvn clean install.
 
