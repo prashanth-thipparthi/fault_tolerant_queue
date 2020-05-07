@@ -1,17 +1,21 @@
-1. We can compile the project using maven.
+# Fault-tolerant Distributed Queue with Sequencer based Protocol
 
+Implemenation of faul tolerant and distributed queue with using sequencer based protocol.
+
+# Compiling code
 mvn clean install.
 
-2. We have to run the servers first with 5 different port numbers as arguments.
+# Running Program.
+## Run the servers using the below command by changing port numers
+mvn exec:java@follower -Dexec.args="<port_number>" &
+## Run the client using the following command.
+mvn exec:java@client
 
-3. Next we have to tun the client and select the server to connect to.
+## How it works.
+1. We have to run the servers first with 5 different port numbers as arguments.
 
-4. Perform the operations on the queue.
+2. Next we have to run the client and select the server to connect to.
 
-5. Verify the queue by connecting to a different server apart from the first server.
+3. Perform the operations on the queue.
 
-What works:
-
-Distributed fault tolerant feature of the queue should work.
-
-Issues are with concurrency of the code.
+4. Verify the queue by connecting to a different server apart from the first server.
